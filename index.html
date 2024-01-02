@@ -3,41 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style rel="stylesheet" href="src/style.css"></style>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
     <title>AI Poem Generator</title>
   </head>
   <body>
-    <header>
-      <h1>HJ's Poem Generator</h1>
-    </header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter a topic.."
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>
-        Poem will go here
-        <br />
-        Poem goes here
-      </div>
-    </main>
-    <footer>
-      This was coded by
-      <a href="https://github.com/zora-git" target="_blank">HJ Park</a> and is
-      <a href="https://github.com/zora-git/poem-generator" target="_blank"
-        >open-sourced on GitHub</a
-      >
-      and
-      <a href="https://hj-poem-generator.netlify.app/" target="_blank"
-        >hosted on Netlify</a
-      >.
-    </footer>
+    <div class="container">
+      <header>
+        <h1>HJ's Poem Generator</h1>
+      </header>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter a topic.."
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input type="submit" value="Submit" class="submit-button" />
+        </form>
+        <hr class="line" />
+
+        <div class="poem">
+          Poem will go here
+          <br />
+          Poem goes here
+        </div>
+      </main>
+      <footer>
+        This was coded by
+        <a href="https://github.com/zora-git" target="_blank">HJ Park</a> and is
+        <a href="https://github.com/zora-git/poem-generator" target="_blank"
+          >open-sourced on GitHub</a
+        >
+        and
+        <a href="https://hj-poem-generator.netlify.app/" target="_blank"
+          >hosted on Netlify</a
+        >.
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
