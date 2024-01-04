@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,7 +19,7 @@
         <h1>HJ's Poem Generator</h1>
       </header>
       <main>
-        <form>
+        <form id="poem-generator-form">
           <input
             type="text"
             placeholder="Enter a topic.."
@@ -31,11 +32,7 @@
         </form>
         <hr class="line" />
 
-        <div class="poem">
-          Poem will go here
-          <br />
-          Poem goes here
-        </div>
+        <div class="poem" id="poem"></div>
       </main>
       <footer>
         This was coded by
