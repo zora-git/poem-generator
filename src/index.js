@@ -3,7 +3,7 @@ function displayPoem(response) {
   new Typewriter("#poem", {
     strings: response.data.answer,
     autoStart: true,
-    delay: 2,
+    delay: 50,
     cursor: "",
   });
 }
@@ -17,6 +17,10 @@ function generatePoem(event) {
   let context =
     "You are poet who gives hopes and likes to write short poems. Your mission is to generate a 4 line poem. Make sure to follow the user instructions.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+
+  let poemElement = document.querySelector("#poem");
+  poemElement.classList.remove("hidden");
+  poemElement.innerHTML = `<span class = "blink">⌛Generating your daily dose of poetry</span>`;
 
   console.log("Generating poem");
   console.log(`Prompt: ${prompt}`);
